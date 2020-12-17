@@ -1,0 +1,52 @@
+==46573== Memcheck, a memory error detector
+==46573== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==46573== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==46573== Command: ./lab6
+==46573== 
+pushing: Queue Breakfast -Ticket Number: 0 -Dish: Egg
+pushing: Queue Breakfast -Ticket Number: 1 -Dish: Pancake
+pushing: Queue Breakfast -Ticket Number: 2 -Dish: Coffee
+pushing: Queue Breakfast -Error Queue is full
+pushing: Queue Lunch -Ticket Number: 0 -Dish: Burger
+pushing: Queue Lunch -Ticket Number: 1 -Dish: Fries
+pushing: Queue Lunch -Ticket Number: 2 -Dish: Pepsi
+pushing: Queue Lunch -Error Queue is full
+pushing: Queue Dinner -Ticket Number: 0 -Dish: Steak
+pushing: Queue Dinner -Ticket Number: 1 -Dish: Caviar
+pushing: Queue Dinner -Ticket Number: 2 -Dish: Wine
+pushing: Queue Dinner -Error Queue is full
+pushing: Queue Bar -Ticket Number: 0 -Dish: Cheese
+pushing: Queue Bar -Ticket Number: 1 -Dish: Salami
+pushing: Queue Bar -Ticket Number: 2 -Dish: Beer
+pushing: Queue Bar -Error Queue is full
+===============================================================================
+popping: Queue Breakfast -Ticket Number: 0 -Dish: Egg
+popping: Queue Lunch -Ticket Number: 0 -Dish: Burger
+popping: Queue Dinner -Ticket Number: 0 -Dish: Steak
+popping: Queue Bar -Ticket Number: 0 -Dish: Cheese
+popping: Queue Breakfast -Ticket Number: 1 -Dish: Pancake
+popping: Queue Lunch -Ticket Number: 1 -Dish: Fries
+popping: Queue Dinner -Ticket Number: 1 -Dish: Caviar
+popping: Queue Bar -Ticket Number: 1 -Dish: Salami
+popping: Queue Breakfast -Ticket Number: 2 -Dish: Coffee
+popping: Queue Lunch -Ticket Number: 2 -Dish: Pepsi
+popping: Queue Dinner -Ticket Number: 2 -Dish: Wine
+popping: Queue Bar -Ticket Number: 2 -Dish: Beer
+popping: Queue Breakfast -Queue is empty, nothing to pop
+popping: Queue Lunch -Queue is empty, nothing to pop
+popping: Queue Dinner -Queue is empty, nothing to pop
+popping: Queue Bar -Queue is empty, nothing to pop
+===============================================================================
+popping: Queue Breakfast -Queue is empty, nothing to pop
+popping: Queue Lunch -Queue is empty, nothing to pop
+popping: Queue Dinner -Queue is empty, nothing to pop
+popping: Queue Bar -Queue is empty, nothing to pop
+==46573== 
+==46573== HEAP SUMMARY:
+==46573==     in use at exit: 0 bytes in 0 blocks
+==46573==   total heap usage: 23 allocs, 23 frees, 5,568 bytes allocated
+==46573== 
+==46573== All heap blocks were freed -- no leaks are possible
+==46573== 
+==46573== For lists of detected and suppressed errors, rerun with: -s
+==46573== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
